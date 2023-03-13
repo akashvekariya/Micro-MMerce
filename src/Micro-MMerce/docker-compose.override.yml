@@ -15,11 +15,37 @@ services:
     ports:
       - "6379:6379"
 
+  discountdb:
+    container_name: discountdb
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=2DahnEmzbqzMauJbxmrauwUDr8zm3j
+      - POSTGRES_DB=discountdb
+    restart: always
+    ports:
+      - "5432:5432"
+    volumes:
+      - discountdbdata:/var/lib/postgresql/data
+
+  pgadmin:
+    container_name: pgadmin
+    environment:
+      # used while login into browser dashboard. this is not from any account just for authentication
+      - PGADMIN_DEFAULT_EMAIL=admin@example.com # change this in production
+      - PGADMIN_DEFAULT_PASSWORD=12345678 # change this in production
+    restart: always
+    ports:
+      - "9002:80"
+    volumes:
+      - pgadmindata:/root/.pgadmin
+
   portainer:
     container_name: portainer
     restart: always
+    # username: admin
+    # password: 1234567812345678
     ports:
-      - "9000:9000"
+      - "9001:9000"
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
       - portainerdata:/data

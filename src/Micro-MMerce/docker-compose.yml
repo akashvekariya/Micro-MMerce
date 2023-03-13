@@ -7,6 +7,12 @@ services:
   basketdb:
     image: redis:7.0.8-alpine
 
+  discountdb:
+    image: postgres:15.2-alpine
+
+  pgadmin:
+    image: dpage/pgadmin4
+
   portainer:
     image: portainer/portainer-ce:alpine
 
@@ -25,5 +31,7 @@ services:
 volumes:
   catalogdbdata:
   portainerdata:
+  discountdbdata:
+  pgadmindata:
 
 
