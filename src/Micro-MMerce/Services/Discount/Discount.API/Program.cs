@@ -1,8 +1,17 @@
+using Discount.API.Interfaces;
+using Discount.API.Repositories;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// ------------ dependency injection --------------------
+
+builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
+
+// ------------------------------------------------------
 
 var app = builder.Build();
 
