@@ -7,6 +7,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// TODO: Add support for data seeding usign extensions
+
 // ------------ dependency injection --------------------
 
 builder.Services.AddScoped<IDiscountRepository, DiscountRepository>();
