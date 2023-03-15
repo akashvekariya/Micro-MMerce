@@ -1,7 +1,7 @@
 namespace Basket.API.Models;
 
-public class ShoppingCartItem {
-
+public class ShoppingCartItem
+{
    public string ProductId { get; set; }
    public string ProductName { get; set; }
    public decimal Price { get; set; }
@@ -10,12 +10,12 @@ public class ShoppingCartItem {
 
    public ShoppingCartItem() { }
 
-   public ShoppingCartItem(string productId, string productName, decimal price, int quantity, string color) {
+   public ShoppingCartItem(string productId, string productName, decimal price, int quantity, string color)
+   {
       ProductId = productId;
       ProductName = productName;
       Price = price;
       Quantity = quantity;
       Color = color;
    }
-
 }

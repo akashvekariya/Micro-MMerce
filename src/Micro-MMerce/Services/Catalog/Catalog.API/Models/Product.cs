@@ -3,7 +3,8 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Catalog.API.Models;
 
-public class Product {
+public class Product
+{
    [BsonId]
    [BsonRepresentation(BsonType.ObjectId)]
    public string Id { get; set; }
@@ -25,5 +26,4 @@ public class Product {
 
    [BsonElement("Price")]
    public decimal Price { get; set; }
-
 }

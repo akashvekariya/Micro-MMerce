@@ -1,35 +1,70 @@
 {
-  "version": "0.2.0",
-  "configurations": [
-    {
-      // Use IntelliSense to find out which attributes exist for C# debugging
-      // Use hover for the description of the existing attributes
-      // For further information visit https://github.com/OmniSharp/omnisharp-vscode/blob/master/debugger-launchjson.md
-      "name": ".NET Core Launch (web)",
-      "type": "coreclr",
-      "request": "launch",
-      "preLaunchTask": "build",
-      // If you have changed target frameworks, make sure to update the program path.
-      "program": "${workspaceFolder}/src/Micro-MMerce/Services/Catalog/Catalog.API/bin/Debug/net6.0/Catalog.API.dll",
-      "args": [],
-      "cwd": "${workspaceFolder}/src/Micro-MMerce/Services/Catalog/Catalog.API",
-      "stopAtEntry": false,
-      // Enable launching a web browser when ASP.NET Core starts. For more information: https://aka.ms/VSCode-CS-LaunchJson-WebBrowser
-      "serverReadyAction": {
-        "action": "openExternally",
-        "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+   "version": "0.2.0",
+   "configurations": [
+      {
+         "name": "Basket API",
+         "type": "coreclr",
+         "request": "launch",
+         "preLaunchTask": "build",
+         "program": "${workspaceFolder}/src/Micro-MMerce/Services/Basket/Basket.API/bin/Debug/net6.0/Basket.API.dll",
+         "args": [],
+         "cwd": "${workspaceFolder}/src/Micro-MMerce/Services/Basket/Basket.API",
+         "stopAtEntry": false,
+         "serverReadyAction": {
+            "action": "openExternally",
+            "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+         },
+         "env": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+         },
+         "sourceFileMap": {
+            "/Views": "${workspaceFolder}/Views"
+         }
       },
-      "env": {
-        "ASPNETCORE_ENVIRONMENT": "Development"
+      {
+         "name": "Discount gRPC",
+         "type": "coreclr",
+         "request": "launch",
+         "preLaunchTask": "build",
+         "program": "${workspaceFolder}/src/Micro-MMerce/Services/Discount/Discount.Grpc/bin/Debug/net6.0/Discount.Grpc.dll",
+         "args": [],
+         "cwd": "${workspaceFolder}/src/Micro-MMerce/Services/Discount/Discount.Grpc",
+         "stopAtEntry": false,
+         "serverReadyAction": {
+            "action": "openExternally",
+            "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+         },
+         "env": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+         },
+         "sourceFileMap": {
+            "/Views": "${workspaceFolder}/Views"
+         }
       },
-      "sourceFileMap": {
-        "/Views": "${workspaceFolder}/Views"
+      {
+         "name": "Catalog API",
+         "type": "coreclr",
+         "request": "launch",
+         "preLaunchTask": "build",
+         "program": "${workspaceFolder}/src/Micro-MMerce/Services/Catalog/Catalog.API/bin/Debug/net6.0/Catalog.API.dll",
+         "args": [],
+         "cwd": "${workspaceFolder}/src/Micro-MMerce/Services/Catalog/Catalog.API",
+         "stopAtEntry": false,
+         "serverReadyAction": {
+            "action": "openExternally",
+            "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+         },
+         "env": {
+            "ASPNETCORE_ENVIRONMENT": "Development"
+         },
+         "sourceFileMap": {
+            "/Views": "${workspaceFolder}/Views"
+         }
+      },
+      {
+         "name": ".NET Core Attach",
+         "type": "coreclr",
+         "request": "attach"
       }
-    },
-    {
-      "name": ".NET Core Attach",
-      "type": "coreclr",
-      "request": "attach"
-    }
-  ]
+   ]
 }

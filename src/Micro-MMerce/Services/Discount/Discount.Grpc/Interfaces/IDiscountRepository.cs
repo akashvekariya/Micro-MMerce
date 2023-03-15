@@ -2,7 +2,8 @@ using Discount.Grpc.Models;
 
 namespace Discount.Grpc.Interfaces;
 
-public interface IDiscountRepository {
+public interface IDiscountRepository
+{
    Task<Coupon> GetDiscount(string productName);
    Task<bool> CreateDiscount(Coupon coupon);
    Task<bool> UpdateDiscount(Coupon coupon);
