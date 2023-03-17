@@ -5,18 +5,18 @@ namespace Catalog.API.Data;
 
 public static class CatalogContextSeed
 {
-   public static void SeedData(IMongoCollection<Product> productCollection)
-   {
-      var existProduct = productCollection.Find(_ => true).Any();
-      if (!existProduct)
-      {
-         productCollection.InsertManyAsync(GetPreconfiguredProducts());
-      }
-   }
+    public static void SeedData(IMongoCollection<Product> productCollection)
+    {
+        var existProduct = productCollection.Find(_ => true).Any();
+        if (!existProduct)
+        {
+            productCollection.InsertManyAsync(GetPreconfiguredProducts());
+        }
+    }
 
-   private static IEnumerable<Product> GetPreconfiguredProducts()
-   {
-      return new List<Product>()
+    private static IEnumerable<Product> GetPreconfiguredProducts()
+    {
+        return new List<Product>()
       {
          new Product()
          {
@@ -85,5 +85,5 @@ public static class CatalogContextSeed
             Category = "Home Kitchen"
          }
       };
-   }
+    }
 }

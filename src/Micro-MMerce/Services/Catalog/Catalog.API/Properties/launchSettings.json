@@ -1,21 +1,21 @@
 {
-   "$schema": "https://json.schemastore.org/launchsettings.json",
-   "profiles": {
-      "Catalog.API": {
-         "commandName": "Project",
-         "launchBrowser": true,
-         "launchUrl": "swagger",
-         "applicationUrl": "http://localhost:8001",
-         "environmentVariables": {
-            "ASPNETCORE_ENVIRONMENT": "Development"
-         }
-      },
-      "Docker": {
-         "commandName": "Docker",
-         "launchBrowser": true,
-         "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
-         "environmentVariables": {},
-         "publishAllPorts": true
-      }
-   }
+    "$schema": "https://json.schemastore.org/launchsettings.json",
+    "profiles": {
+        "Catalog.API": {
+            "commandName": "Project",
+            "launchBrowser": true,
+            "launchUrl": "swagger",
+            "applicationUrl": "http://localhost:8001",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        "Docker": {
+            "commandName": "Docker",
+            "launchBrowser": true,
+            "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger",
+            "environmentVariables": {},
+            "publishAllPorts": true
+        }
+    }
 }

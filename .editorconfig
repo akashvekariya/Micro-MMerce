@@ -15,8 +15,8 @@ root = true
 [*]
 charset = utf-8
 indent_style = space
-indent_size = 3
-insert_final_newline = true
+indent_size = 4
+# insert_final_newline = true
 trim_trailing_whitespace = true
 end_of_line = lf
 max_line_length = 120
@@ -28,30 +28,36 @@ max_line_length = 120
 # Visual Studio Solution Files
 [*.sln]
 indent_style = tab
+insert_final_newline = true
 
 # Visual Studio XML Project Files
-[*.{csproj,vbproj,vcxproj.filters,proj,projitems,shproj}]
-indent_size = 3
+[*.{csproj,vbproj,vcxproj.filters,proj,projitems,shproj,dcproj}]
+indent_size = 4
+insert_final_newline = true
 
 # XML Configuration Files
 [*.{xml,config,props,targets,nuspec,resx,ruleset,vsixmanifest,vsct}]
-indent_size = 3
+indent_size = 4
+insert_final_newline = true
 
 # JSON Files
 [*.{json,json5,webmanifest}]
-indent_size = 3
+indent_size = 4
 
 # YAML Files
 [*.{yml,yaml}]
-indent_size = 3
+indent_size = 4
+insert_final_newline = true
 
 # Markdown Files
 [*.{md,mdx}]
 trim_trailing_whitespace = false
+insert_final_newline = true
 
 # Web Files
 [*.{htm,html,js,jsm,ts,tsx,cjs,cts,ctsx,mjs,mts,mtsx,css,sass,scss,less,pcss,svg,vue}]
-indent_size = 3
+indent_size = 4
+insert_final_newline = true
 
 # Batch Files
 [*.{cmd,bat}]
@@ -73,7 +79,8 @@ indent_style = tab
 [*.{cs,csx,cake,vb,vbx}]
 # Default Severity for all .NET Code Style rules below
 dotnet_analyzer_diagnostic.severity = warning
-indent_size = 3
+insert_final_newline = true
+indent_size = 4
 
 ##########################################
 # Language Rules
@@ -102,7 +109,7 @@ dotnet_style_parentheses_in_relational_binary_operators = always_for_clarity:war
 dotnet_style_parentheses_in_other_binary_operators = always_for_clarity:warning
 dotnet_style_parentheses_in_other_operators = never_if_unnecessary:warning
 # Expression-level preferences
-dotnet_style_object_initializer = false:warning
+dotnet_style_object_initializer = true:warning
 dotnet_style_collection_initializer = true:warning
 dotnet_style_explicit_tuple_names = true:warning
 dotnet_style_prefer_inferred_tuple_names = true:warning
@@ -211,7 +218,7 @@ csharp_new_line_before_open_brace = all
 csharp_new_line_before_else = false
 csharp_new_line_before_catch = false
 csharp_new_line_before_finally = false
-csharp_new_line_before_members_in_object_initializers = false
+csharp_new_line_before_members_in_object_initializers = true
 csharp_new_line_before_members_in_anonymous_types = true
 csharp_new_line_between_query_expression_clauses = true
 # Indentation options
