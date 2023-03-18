@@ -5,7 +5,19 @@
 
 version: 2
 updates:
-  - package-ecosystem: "" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "nuget"
+    directory: "src/Micro-MMerce/Services/Catalog/Catalog.API"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "nuget"
+    directory: "src/Micro-MMerce/Services/Discount/Discount.API"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "nuget"
+    directory: "src/Micro-MMerce/Services/Discount/Discount.Grpc"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "nuget"
+    directory: "src/Micro-MMerce/Services/Basket/Basket.API"
     schedule:
       interval: "weekly"
