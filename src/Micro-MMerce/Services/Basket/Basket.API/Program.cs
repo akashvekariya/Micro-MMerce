@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddStackExchangeRedisCache(options => options.Configuration = configuration.GetValue<string>("CacheSettings:ConnectionString"));
 
 builder.Services.AddGrpcClient<DiscountProtoService.DiscountProtoServiceClient>(
-   options => options.Address = new Uri(configuration["GrpcSettings:DiscountUrl"])
+   options => options.Address = new Uri(configuration.GetValue<string>("GrpcSettings:DiscountUrl"))
 );
 
 // ------------ dependency injection --------------------
