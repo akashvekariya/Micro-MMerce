@@ -349,6 +349,8 @@ dotnet_naming_symbols.stylecop_static_readonly_fields_group.applicable_kinds    
 dotnet_naming_rule.stylecop_static_readonly_fields_must_be_pascal_case_rule.symbols    = stylecop_static_readonly_fields_group
 dotnet_naming_rule.stylecop_static_readonly_fields_must_be_pascal_case_rule.style      = pascal_case_style
 dotnet_naming_rule.stylecop_static_readonly_fields_must_be_pascal_case_rule.severity   = none
+# No doctype comment required
+dotnet_diagnostic.RCS1181.severity = silent
 
 # No non-private instance fields are allowed
 # https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1401.md
