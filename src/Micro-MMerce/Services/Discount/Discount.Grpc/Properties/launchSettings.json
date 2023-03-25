@@ -1,12 +1,12 @@
 {
-    "profiles": {
-        "Discount.Grpc": {
-            "commandName": "Project",
-            "applicationUrl": "http://localhost:8004",
-            "environmentVariables": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
-            },
-            "dotnetRunMessages": true
-        }
+  "profiles": {
+    "Discount.Grpc": {
+      "commandName": "Project",
+      "applicationUrl": "http://localhost:8004",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
     }
+  }
 }

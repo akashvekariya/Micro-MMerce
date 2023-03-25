@@ -1,15 +1,15 @@
 {
-    "$schema": "https://json.schemastore.org/launchsettings.json",
-    "profiles": {
-        "Basket.API": {
-            "commandName": "Project",
-            "launchBrowser": true,
-            "launchUrl": "swagger",
-            "applicationUrl": "http://localhost:8002",
-            "environmentVariables": {
-                "ASPNETCORE_ENVIRONMENT": "Development"
-            },
-            "dotnetRunMessages": true
-        }
+  "$schema": "https://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "Basket.API": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger",
+      "applicationUrl": "http://localhost:8002",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development"
+      },
+      "dotnetRunMessages": true
     }
+  }
 }
