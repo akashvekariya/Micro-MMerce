@@ -2,6 +2,26 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name": "Ocelot API Gw",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            "program": "${workspaceFolder}/src/Micro-MMerce/ApiGateways/OcelotApiGw/bin/Debug/net6.0/OcelotApiGw.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}/src/Micro-MMerce/ApiGateways/OcelotApiGw",
+            "stopAtEntry": false,
+            "serverReadyAction": {
+                "action": "openExternally",
+                "pattern": "\\bNow listening on:\\s+(https?://\\S+)"
+            },
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Local"
+            },
+            "sourceFileMap": {
+                "/Views": "${workspaceFolder}/Views"
+            }
+        },
+        {
             "name": "Basket API",
             "type": "coreclr",
             "request": "launch",
