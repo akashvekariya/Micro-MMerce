@@ -1,12 +1,13 @@
-﻿{
+{
     "$schema": "https://json.schemastore.org/launchsettings.json",
     "profiles": {
-        "OcelotApiGw": {
+        "Shopping.Aggregator": {
             "commandName": "Project",
             "launchBrowser": true,
-            "applicationUrl": "http://localhost:8000",
+            "launchUrl": "swagger",
+            "applicationUrl": "http://localhost:8006",
             "environmentVariables": {
-                "ASPNETCORE_ENVIRONMENT": "Local"
+                "ASPNETCORE_ENVIRONMENT": "Development"
             },
             "dotnetRunMessages": true
         }
